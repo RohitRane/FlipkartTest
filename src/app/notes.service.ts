@@ -22,7 +22,7 @@ export class NotesService {
       this.notes.forEach(_note => {
         let pNode = this.find(_note, parentNodeId);
         if (pNode){
-          debugger;
+          
            pNode.children.push(note);
         }
          
@@ -54,10 +54,10 @@ export class NotesService {
   }
 
   findText(node, text){
-    debugger;
+    
     if (node.text.includes(text)) return node;
     for (var i = 0; i < node.children.length; i++) {
-      var result = this.find(node.children[i], text);
+      var result = this.findText(node.children[i], text);
       if (result) return result;
     }
     return null;

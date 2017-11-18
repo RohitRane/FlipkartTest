@@ -33,13 +33,14 @@ export class NoteComponent implements OnInit {
       show: true,
       nid: ''
     }
-    debugger;
+    
     this.noteSrvc.addNote(newNote,this.note.nid);
     
   }
 
   showNode(){
     let match = this.noteSrvc.findText(this.note,this.searchStr);
+    debugger;
     if(match){
       return true;
     } 

@@ -5,7 +5,6 @@
       <button class="new-note" (click)="createChildNote()">New Note</button>
     </div>
   </div>
-  {{note.children.length}}
   <div *ngIf="note.children.length">
      <app-note *ngFor="let childNote of note.children" [note]="childNote" [searchStr]="searchStr" ></app-note> 
   </div>
