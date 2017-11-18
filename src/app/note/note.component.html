@@ -1,0 +1,13 @@
+<div class="note">
+  <div class="note-card">
+    {{note.text}}
+    <div>
+      <button class="new-note" (click)="createChildNote()">New Note</button>
+    </div>
+  </div>
+  {{note.children.length}}
+  <div *ngIf="note.children.length">
+     <app-note *ngFor="let childNote of note.children" [note]="childNote"></app-note> 
+  </div>
+  
+</div>

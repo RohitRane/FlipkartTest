@@ -1,0 +1,18 @@
+.note-card{
+    height: 50px;
+    width: 200px;
+    background-color: wheat;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.new-note{
+    background-color: brown;
+    color: white;
+    float: right;
+}
+
+.note{
+    margin-left: 20px;
+}
