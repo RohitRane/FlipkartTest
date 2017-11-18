@@ -1,0 +1,10 @@
+Framework used : Angular 4.0
+
+Reason For Using : This is the framework I am currently using @ my place of work. So I am most comfortable with it. Helps with the time constraint. 
+Please I am using angular-cli which can help generate basic scaffolding and file structure using cli commands.
+
+Unable to complete : Target-2
+
+If I had more time : I would focus on Target-2 and the styling aspect. Currently I have focussed on only functionality of Target-1.
+
+Handling SEO: I don't have much experience in this dept. So I can't guarantee.
