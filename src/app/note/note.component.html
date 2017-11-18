@@ -1,4 +1,4 @@
-<div class="note">
+<div class="note" [hidden]="!showNode() ">
   <div class="note-card">
     {{note.text}}
     <div>
@@ -7,7 +7,7 @@
   </div>
   {{note.children.length}}
   <div *ngIf="note.children.length">
-     <app-note *ngFor="let childNote of note.children" [note]="childNote"></app-note> 
+     <app-note *ngFor="let childNote of note.children" [note]="childNote" [searchStr]="searchStr" ></app-note> 
   </div>
   
 </div>

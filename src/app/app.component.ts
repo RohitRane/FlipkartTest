@@ -10,7 +10,8 @@ import {NotesService} from './notes.service';
 })
 export class AppComponent {
   noteText;
-
+searchTxt;
+searchingText = '';
   constructor(public notesSrvc : NotesService){
     
   }
@@ -25,5 +26,10 @@ export class AppComponent {
 
     console.log("New Note", newNote);
     this.notesSrvc.addNote(newNote);
+  }
+
+  search(){
+    this.searchingText = this.searchTxt
+    //alert(this.searchTxt);
   }
 }
